@@ -63,6 +63,7 @@ int main() {
         std::cout << "create(c), delete(d), search(s) exit(e)" << std::endl;
         std::string command_str = "";
         std::cin >> command_str;
+        std::cin.ignore(1000, '\n');
         if (command_str.length() == 1 && (command_str[0] == 'c' || command_str[0] == 'd' || command_str[0] == 's' || command_str[0] == 'e')) {
             if (command_str[0] == 'c') {
                 Contact current_contact;
